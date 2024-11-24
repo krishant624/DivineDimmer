@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c; /* Light black screen background */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    background-color: #333; /* Dark background for the content */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+  }
+  
+  .header h1 {
+    text-align: center;
+    color: #00bcd4; /* Light teal for header */
+  }
+  
+  /* Top Links */
+  .top-links {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .top-links a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .top-links a:hover {
+    color: #004d40;
+  }
+  
+  /* Controls */
+  label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #444;
+  }
+  
+  button {
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #0097a7;
+  }
+  
+  .scheduling input[type="time"] {
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    margin-top: 5px;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  footer .footer-content {
+    background-color: #00bcd4;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  footer p {
+    margin: 5px;
+  }
+  
+  /* Presets and Controls Styling */
+  .presets button {
+    background-color: #333;
+    color: #00bcd4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #00bcd4;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .presets button:hover {
+    background-color: #00bcd4;
+    color: #333;
+  }
+  
+  .color-picker input[type="color"] {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .color-temperature span {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  

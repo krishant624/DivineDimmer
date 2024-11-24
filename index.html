@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DivineDimmer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Main Content -->
+  <div class="container">
+    <div class="header">
+      <h1>DivineDimmer</h1>
+    </div>
+
+    <!-- Screen Selection and Brightness Adjustment -->
+    <div class="screen-selection">
+      <label for="screen-select">Select Screen</label>
+      <select id="screen-select" onchange="showBrightnessControl()">
+        <option value="screen1">Screen 1</option>
+        <option value="screen2">Screen 2</option>
+        <option value="screen3">Screen 3</option>
+      </select>
+    </div>
+
+    <!-- Brightness Control -->
+    <div class="brightness-control">
+      <label for="brightness-slider">Adjust Brightness</label>
+      <input type="range" id="brightness-slider" min="0" max="100" value="50">
+      <span id="brightness-value">50</span>
+    </div>
+
+    <!-- Contrast Control -->
+    <div class="contrast-control">
+      <label for="contrast-slider">Adjust Contrast</label>
+      <input type="range" id="contrast-slider" min="0" max="100" value="50">
+      <span id="contrast-value">50</span>
+    </div>
+
+    <!-- Presets -->
+    <div class="presets">
+      <h3>Lighting Presets</h3>
+      <button onclick="applyPreset('morning')">Morning</button>
+      <button onclick="applyPreset('evening')">Evening</button>
+      <button onclick="applyPreset('movie')">Movie</button>
+      <button onclick="applyPreset('party')">Party</button>
+      <button onclick="applyPreset('custom')">Create Custom</button>
+    </div>
+
+    <!-- Color Picker -->
+    <div class="color-picker">
+      <label for="color-wheel">Choose Color</label>
+      <input type="color" id="color-wheel" onchange="updateColor()">
+    </div>
+
+    <!-- Color Temperature -->
+    <div class="color-temperature">
+      <label for="color-temperature-slider">Color Temperature</label>
+      <input type="range" id="color-temperature-slider" min="2700" max="6500" value="4000">
+      <span id="color-temperature-value">4000K</span>
+    </div>
+
+    <!-- Scheduling -->
+    <div class="scheduling">
+      <label for="schedule-time">Set Time for Lighting</label>
+      <input type="time" id="schedule-time">
+      <button onclick="setSchedule()">Set Schedule</button>
+    </div>
+     <!-- Top Links: "Explore More" and email -->
+      
+  <div class="top-links">
+    <p><a href="http://thebornagainnation.com" target="_blank">Explore More</a> | Contact: <a href="mailto:krishantrauniyar@gmail.com">krishantrauniyar@gmail.com</a></p>
+  </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>ALL RIGHTS ARE RESERVED</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

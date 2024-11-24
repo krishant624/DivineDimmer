@@ -1,0 +1,24 @@
+{
+  "name": "divinedimmer",
+  "version": "1.0.0",
+  "description": "A smart lighting control app for your home, designed to manage brightness, colors, effects, and energy-saving features.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "smart lighting",
+    "brightness",
+    "home automation",
+    "electron"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^33.2.0"
+  },
+  "dependencies": {
+    "brightness": "^3.0.0"
+  }
+}
